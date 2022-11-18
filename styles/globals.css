@@ -57,7 +57,12 @@ a {
 }
 
 .tile.column:before {
-    background-color: rgba(15, 15, 15, 0.0);
+    background-image: linear-gradient(
+      to bottom,
+      rgba(15, 15, 15, 0.8),
+      rgba(15, 15, 15, 0.2)
+    );
+    background-color: transparent;
     content: "";
     inset: 0.5px;
     position: absolute;
@@ -76,7 +81,6 @@ a {
   overflow: hidden;
   text-align: center;
   background-size: cover;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9)) no-repeat center;
   transition: all 0.5s ease;
 }
 
