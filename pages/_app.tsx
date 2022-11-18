@@ -26,6 +26,8 @@ export default function App({ Component, pageProps }: AppProps) {
       <meta name="twitter:title" content="CoasterFreakDEV" />
       <meta name="twitter:description" content="AppHub / Portfolio ~ All your favourite services" />
       <meta name="twitter:image" content="/android-chrome-512x512.png" />
+
+      <script async={false} src={'https://icons.flawcra.cc/get.js'} />
     </Head>
     <Component {...pageProps} />
   </>
