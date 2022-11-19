@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoasterFreakDEV ~ AppHub</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500&display=swap" rel="stylesheet">
+    <script src="https://icons.flawcra.cc/get.js"></script>
+</head>
+<body>
+    <div id="cards">
+        <a class="card" href="https://devsky.one" target="_blank" rel="noreferrer">
+          <div class="card-content">
+            <div class="card-image">
+              <img src="devsky.png" alt="DevSky" style="width: 128px; height: 128px" />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                  <img src="devsky.png" alt="DevSky" style="width: 32px; height: 32px" />
+                <div class="card-info-title">
+                  <h3>DevSky</h3>
+                  <h4>German Coding Communiy</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://darker.page" target="_blank" rel="noreferrer">
+          <div class="card-content">
+            <div class="card-image">
+                <img src="darker.svg" alt="DevSky" style="width: 128px; height: 128px" />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                  <img src="darker.svg" alt="DevSky" style="width: 32px; height: 32px" />
+                <div class="card-info-title">
+                  <h3>DarkerPage</h3>
+                  <h4>Darkmode Color Paletts for your next project</h4>
+                </div>    
+              </div>  
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://tempmail.mx" target="_blank" rel="noreferrer">
+          <div class="card-content">
+            <div class="card-image">
+                <img src="tempmail-mx.png" alt="DevSky" style="width: 128px; height: 128px" />
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                  <img src="tempmail-mx.png" alt="DevSky" style="width: 32px; height: 32px" />
+                <div class="card-info-title">
+                  <h3>TempMail.MX</h3>
+                  <h4>With TempMail.MX, you can create free temporary (and semi-permanent) email inboxes to send and receive emails.</h4>
+                </div>    
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://github.com/CoasterFreakDE" target="_blank" rel="noreferrer">
+          <div class="card-content">
+            <div class="card-image">
+                <i class="fa-brands fa-github"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                  <i class="fa-brands fa-github"></i>
+                <div class="card-info-title">
+                  <h3>GitHub</h3>
+                  <h4>All my GitHub Repos.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="https://www.youtube.com/playlist?list=PLSgiAkLaBUJ8mHzmKg1gm8lfL3iV_RYxG" target="_blank" rel="noreferrer">
+          <div class="card-content">
+            <div class="card-image">
+                <i class="fa-brands fa-python"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                  <i class="fa-brands fa-python"></i>
+                <div class="card-info-title">
+                  <h3>Python Discord Tutorials</h3>
+                  <h4>V3 of my german tutorial series for python discord bots.</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+        <a class="card" href="#" rel="noreferrer">
+          <div class="card-content">
+            <div class="card-image">
+                <i class="fa-duotone fa-angles-right"></i>
+            </div>
+            <div class="card-info-wrapper">
+              <div class="card-info">
+                  <i class="fa-duotone fa-angles-right"></i>
+                <div class="card-info-title">
+                  <h3>More</h3>
+                  <h4>More services coming soon...</h4>
+                </div>
+              </div>
+            </div>
+          </div>
+        </a>
+      </div>
+
+    <a id="dev-link" class="meta-link" href="https://coasterfreak.de" target="_blank" rel="noreferrer">
+        <i class="fa-solid fa-link"></i>
+        <span>Lebenslauf</span>
+    </a>
+
+    <a id="source-link" class="meta-link" href="https://devsky.one/impressum" target="_blank" rel="noreferrer">
+      <i class="fa-solid fa-link"></i>
+      <span>Imprint</span>
+    </a>
+
+    <a id="youtube-link" class="meta-link" href="https://www.youtube.com/channel/UCDvHH-ATRjVX4dfOA-HZGNA" target="_blank" rel="noreferrer">
+      <i class="fa-brands fa-youtube"></i>
+      <span>Channel</span>
+    </a>
+
+    <script>
+        document.getElementById("cards").onmousemove = e => {
+          for(const card of document.getElementsByClassName("card")) {
+            const rect = card.getBoundingClientRect(),
+                    x = e.clientX - rect.left,
+                    y = e.clientY - rect.top;
+
+            card.style.setProperty("--mouse-x", `${x}px`);
+            card.style.setProperty("--mouse-y", `${y}px`);
+          }
+        }
+    </script>
+</body>
+</html>
